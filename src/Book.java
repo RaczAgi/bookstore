@@ -1,12 +1,14 @@
-public class Book extends Bookstore{
-    protected String title;
-    protected String author;
-    protected int price;
+public class Book {
+    String title;
+    String author;
+    int price;
 
-    public Book(String title, String author, int price) {
-        this.title = title;
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
         this.author = author;
-        this.price = price;
     }
 
     public String getTitle() {
@@ -17,19 +19,17 @@ public class Book extends Bookstore{
         this.title = title;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
     public int getPrice() {
         return price;
     }
 
     public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public Book(String title, String author, int price) {
+        this.title = title;
+        this.author = author;
         this.price = price;
     }
 
